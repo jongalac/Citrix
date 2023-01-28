@@ -22,7 +22,7 @@ function Test-DGAvailability ($payload)
     }
 }
 function Log-Event ($id,$level,$message){
-if ((Get-ChildItem HKLM:\SYSTEM\CurrentControlSet\Services\EventLog\application).pschildname -notcontains "InsentraScripting") {New-EventLog -LogName Application -Source "InsentraScripting"}
-Write-EventLog -LogName Application -Source "InsentraScripting" -EntryType $level -Message $message -EventId $id
+if ((Get-ChildItem HKLM:\SYSTEM\CurrentControlSet\Services\EventLog\application).pschildname -notcontains "CtxVDAScripting") {New-EventLog -LogName Application -Source "CtxVDAScripting"}
+Write-EventLog -LogName Application -Source "CtxVDAScripting" -EntryType $level -Message $message -EventId $id
 }
 Export-ModuleMember -Function Test-DGAvailability
