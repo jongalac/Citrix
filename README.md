@@ -1,1 +1,2 @@
 # A Citrix Powershell script and Powershell module used to monitor the availbilty of Citrix VDA's within a Delivey Group. Instruction for use are within the PoSH file comments. 
+# This can be used to write to the Windows event log that can be monitored by most standard monitoring solutions... e.g if X amount of VDAs are offline, in maintenace or unregistered fire an alert to notify admins. This can be run at a regular frequcy such as every 30 minuntes via schedule task or fired via the monitoring solution itself. 
